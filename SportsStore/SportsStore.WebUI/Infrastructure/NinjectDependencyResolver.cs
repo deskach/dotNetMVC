@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Web.Mvc;
 using Ninject;
+using SportsStore.Domain.Abstract;
+using SportsStore.WebUI.Mocks;
 
 namespace SportsStore.WebUI.Infrastructure
 {
@@ -27,7 +29,7 @@ namespace SportsStore.WebUI.Infrastructure
 
         private void AddBindings()
         {
-            // put bindings here
+            kernel.Bind<IProductRepository>().ToConstant(MockProductRepository.getInstance().Object);
         }
     }
 }
