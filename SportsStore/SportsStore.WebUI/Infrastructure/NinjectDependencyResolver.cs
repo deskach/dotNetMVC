@@ -4,6 +4,7 @@ using System.Web.Mvc;
 using Ninject;
 using SportsStore.Domain.Abstract;
 using SportsStore.WebUI.Mocks;
+using SportsStore.Domain.Concrete;
 
 namespace SportsStore.WebUI.Infrastructure
 {
@@ -29,7 +30,8 @@ namespace SportsStore.WebUI.Infrastructure
 
         private void AddBindings()
         {
-            kernel.Bind<IProductRepository>().ToConstant(MockProductRepository.getInstance().Object);
+            //kernel.Bind<IProductRepository>().ToConstant(MockProductRepository.getInstance().Object);
+            kernel.Bind<IProductRepository>().To<EFProductRepository>();
         }
     }
 }

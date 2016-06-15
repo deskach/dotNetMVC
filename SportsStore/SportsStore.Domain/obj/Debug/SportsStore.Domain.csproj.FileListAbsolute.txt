@@ -16,3 +16,8 @@ C:\Users\Dzianis\Source\Repos\dotNetMVC\SportsStore\SportsStore.Domain\bin\Debug
 C:\Users\Dzianis\Source\Repos\dotNetMVC\SportsStore\SportsStore.Domain\obj\Debug\SportsStore.Domain.csprojResolveAssemblyReference.cache
 C:\Users\Dzianis\Source\Repos\dotNetMVC\SportsStore\SportsStore.Domain\obj\Debug\SportsStore.Domain.dll
 C:\Users\Dzianis\Source\Repos\dotNetMVC\SportsStore\SportsStore.Domain\obj\Debug\SportsStore.Domain.pdb
+C:\Users\Dzianis\Source\Repos\dotNetMVC\SportsStore\SportsStore.Domain\bin\Debug\SportsStore.Domain.dll.config
+C:\Users\Dzianis\Source\Repos\dotNetMVC\SportsStore\SportsStore.Domain\bin\Debug\EntityFramework.dll
+C:\Users\Dzianis\Source\Repos\dotNetMVC\SportsStore\SportsStore.Domain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Dzianis\Source\Repos\dotNetMVC\SportsStore\SportsStore.Domain\bin\Debug\EntityFramework.xml
+C:\Users\Dzianis\Source\Repos\dotNetMVC\SportsStore\SportsStore.Domain\bin\Debug\EntityFramework.SqlServer.xml
