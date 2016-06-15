@@ -9,17 +9,23 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>Index</title>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap-theme.css" rel="stylesheet" />
+    <link href="~/Content/Styles.css" rel="stylesheet" />
 </head>
 <body>
-    <div> 
-        @ViewBag.Greeting World!
+    <div class="panel panel-info">
+        <div class="panel-heading">@ViewBag.Greeting World!</div>
+        <div class="panel-body">
+            We're going to have an exciting party!
+            And you are invited
+        </div>
+    </div>
 
-        <p>
-            We're going to have an exciting party.<br />
-            (To do: sell it better. Add pictures or something.)
-
+    <div class="text-center">
+        <div class="btn btn-primary">
             @Html.ActionLink("RSVP Now", "RsvpForm")
-        </p>
+        </div>
     </div>
 </body>
 </html>
