@@ -6,6 +6,8 @@
     <title>@ViewBag.Title</title>
     <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
     <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="∼/Content/bootstrap.css" rel="stylesheet" />
+    <link href="∼/Content/bootstrap-theme.css" rel="stylesheet" />
     <script src="~/Scripts/modernizr-2.6.2.js"></script>
 </head>
 <body>
@@ -19,7 +21,7 @@
                 </button>
                 @Html.ActionLink("Sports Store", "List", "Product", new { area = "" }, new { @class = "navbar-brand" })
             </div>
-            <div class="navbar-collapse collapse">
+            <div class="navbar-collapse collapse" role="navigation">
                 <ul class="nav navbar-nav">
                 </ul>
             </div>
@@ -27,10 +29,17 @@
     </div>
 
     <div class="container body-content">
-        @RenderBody()
+        <div class="row panel">
+            <div id="categories" class="col-xs-3">
+                Put something useful here later
+            </div>
+            <div class="col-xs-8">
+                @RenderBody()
+            </div>
+        </div>
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - Sports Store ASP.NET MVC Application</p>
+            <p>&copy; 2016 - Sports Store ASP.NET MVC Application</p>
         </footer>
     </div>
 
