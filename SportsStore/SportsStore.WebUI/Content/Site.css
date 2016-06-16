@@ -16,3 +16,8 @@ select,
 textarea {
     max-width: 20em;
 }
+
+.page-link-item {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
