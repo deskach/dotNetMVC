@@ -3,7 +3,7 @@
 @{ 
     var btnPrimary = ViewBag.selectedCategory == null ? " btn-primary" : "";
 
-    @Html.ActionLink("Home", "List", "Product", null, new { @class = "btn btn-block btn-default btn-lg" + btnPrimary });
+    @Html.ActionLink("All", "List", "Product", null, new { @class = "btn btn-block btn-default btn-lg" + btnPrimary });
 }
 
 
