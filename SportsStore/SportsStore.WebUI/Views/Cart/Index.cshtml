@@ -11,7 +11,8 @@
             <th>Quantity</th>
             <th>Item</th>
             <th class="text-right">Price</th>
-            <th class="text-right">Subtotal</th>
+            <th class="text-left">Subtotal</th>
+            <th class="text-right">Action</th>
         </tr>
     </thead>
     <tbody>
@@ -20,8 +21,18 @@
                 <td class="text-center">@line.Quantity</td>
                 <td class="text-left">@line.Product.Name</td>
                 <td class="text-right">@line.Product.Price.ToString("c")</td>
-                <td class="text-right">
+                <td class="text-left">
                     @((line.Quantity * line.Product.Price).ToString("c"))
+                </td>
+                <td class="text-right">
+                    @Html.ActionLink("Remove",
+                                        "RemoveFromCart",
+                                        new {
+                                            productId = line.Product.ProductID,
+                                            returnUrl = Model.ReturnUrl
+                                        },
+                                        new { @class = "btn btn-sm btn-default" }
+                    )
                 </td>
             </tr>
         }
@@ -29,9 +40,10 @@
     <tfoot>
         <tr>
             <td colspan="3" class="text-right">Total:</td>
-            <td class="text-right">
+            <td class="text-left">
                 @Model.Cart.ComputeTotalValue().ToString("c")
             </td>
+            <td colspan="1" class="text-right"></td>
         </tr>
     </tfoot>
 </table>
