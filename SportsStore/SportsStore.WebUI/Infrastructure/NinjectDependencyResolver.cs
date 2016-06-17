@@ -26,6 +26,7 @@ namespace SportsStore.WebUI.Infrastructure {
         private void AddBindings() {
             //kernel.Bind<IProductRepository>().ToConstant(MockProductRepository.getInstance().Object);
             kernel.Bind<IProductRepository>().To<EFProductRepository>();
+            kernel.Bind<IOrderProcessor>().To<EmailOrderProcessor>();
         }
     }
 }
