@@ -9,12 +9,17 @@
     <link href="∼/Content/bootstrap.css" rel="stylesheet" />
     <link href="∼/Content/bootstrap-theme.css" rel="stylesheet" />
     <link href="~/Content/Site.css" rel="stylesheet" />
+    <link href="~/Content/Responsive.css" rel="stylesheet" />
     <script src="~/Scripts/modernizr-2.6.2.js"></script>
 </head>
 <body>
     <div class="container container-fluid">
         <nav class="navbar navbar-inverse" role="navigation">
-            @Html.ActionLink("Sports Store", "List", "Product", new { area = "" }, new { @class = "navbar-brand" })
+            <a class="navbar-brand" href=@Url.Action("List", "Product")>
+                <span class="hidden-xs">SPORTS STORE</span>
+                <div class="visible-xs">SPORTS</div>
+                <div class="visible-xs">STORE</div>
+            </a>
             @Html.Action("Summary", "Cart")
         </nav>
 
