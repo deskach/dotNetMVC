@@ -21,9 +21,7 @@ namespace SportsStore.WebUI.Controllers {
 
             ViewBag.SelectedCategory = category;
 
-            var viewName = horizontalLayout ? "MenuHorizontal" : "Menu";
-
-            return PartialView(viewName, categories);
+            return PartialView(categories);
         }
     }
 }
